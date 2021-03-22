@@ -12,17 +12,17 @@ class IndicadorInDB(BaseModel):
 database_indicadores = Dict[str, IndicadorInDB]
 database_indicadores = {
     "Embargos": IndicadorInDB(**{"id_indicador": 1,
-                            "name":"Indicor22",
+                            "name":"Embargos",
                             "porcentaje": 98.55,
                             "gerencia": "Gerencia Operación Bancaria",
                             "central": "Atención a Requerimientos Externos"}),
     "Requerimientos": IndicadorInDB(**{"id_indicador": 2,
-                            "name":"Indicor22",
+                            "name":"Requerimientos",
                             "porcentaje": 100.00,
                             "gerencia": "Gerencia Operación Bancaria",
                             "central": "Atención a Requerimientos Externos"}),
     "Calidad": IndicadorInDB(**{"id_indicador": 3,
-                            "name":"Indicor22",
+                            "name":"Calidad",
                             "porcentaje": 99.99,
                             "gerencia": "Gerencia Operación Bancaria",
                             "central": "Atención a Requerimientos Externos"})
