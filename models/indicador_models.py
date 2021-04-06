@@ -6,6 +6,9 @@ class IndicadorIn(BaseModel):
     porcentaje: float
     gerencia: str
     central: str
+    colorin: str
+    formula: str
+    calculo: str
 
 class IndicadorOut(BaseModel):
     id_indicador: int = 0
@@ -13,4 +16,6 @@ class IndicadorOut(BaseModel):
     porcentaje: float
     gerencia: str
     central: str
-
+    colorin: str
+    formula: str
+    calculo: str
