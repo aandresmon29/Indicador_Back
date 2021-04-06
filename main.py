@@ -5,18 +5,18 @@ from routers.indicador_router import router as router_indicador
 from routers.user_router import router as router_user
 from routers.gerencia_router import router as router_gerencia
 
-app = FastAPI()
+api = FastAPI()
 
 origins = [
     "http://localhost.tiangolo.com", "https://localhost.tiangolo.com",
     "http://localhost", "http://localhost:8080","https://indivp.herokuapp.com",
 ]
 
-app.add_middleware(
+api.add_middleware(
     CORSMiddleware, allow_origins=origins,
     allow_credentials=True, allow_methods=["*"], allow_headers=["*"],
 )
 
-app.include_router(router_user)
-app.include_router(router_indicador)
-app.include_router(router_gerencia)
+api.include_router(router_user)
+api.include_router(router_indicador)
+api.include_router(router_gerencia)
