@@ -11,6 +11,10 @@ class IndicadorInDB(BaseModel):
     colorin: str
     formula: str
     calculo: str
+    ponderado: float
+    lgreen: float
+    lyellow: float
+    lred: float
 
 database_indicadores = Dict[str, IndicadorInDB]
 database_indicadores = {
@@ -21,7 +25,11 @@ database_indicadores = {
                             "central": "Atención a Requerimientos Externos",
                             "colorin":"green",
                             "formula":"Respuestas generadas / Embargos y Desembargos Capturados",
-                            "calculo":"98.5/100"}),
+                            "calculo":"98.5/100",
+                            "ponderado":95.0,
+                            "lgreen":97.5,
+                            "lyellow":97.5,
+                            "lred":95.0}),
     "Indicador2": IndicadorInDB(**{"id_indicador": 2,
                             "name":"Requerimientos",
                             "porcentaje": 99.6,
@@ -29,7 +37,11 @@ database_indicadores = {
                             "central": "Atención a Requerimientos Externos",
                             "colorin":"green",
                             "formula":"Respuestas generadas / Requerimientos Capturados",
-                            "calculo":"99.6/100"}),
+                            "calculo":"99.6/100",
+                            "ponderado":95.0,
+                            "lgreen":97.5,
+                            "lyellow":97.5,
+                            "lred":95.0}),
     "Indicador3": IndicadorInDB(**{"id_indicador": 3,
                             "name":"Calidad",
                             "porcentaje": 99.9,
@@ -37,7 +49,11 @@ database_indicadores = {
                             "central": "Atención a Requerimientos Externos",
                             "colorin":"green",
                             "formula":"Embargos y Desembargos Capturados - Reclamos Favorables a clientes / Embargos y Desembargos Capturados",
-                            "calculo":"99.9-1/100"}),
+                            "calculo":"99.9-1/100",
+                            "ponderado":95.0,
+                            "lgreen":97.5,
+                            "lyellow":97.5,
+                            "lred":95.0}),
 }
 
 def get_indicador(indicador: str):

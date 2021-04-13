@@ -9,6 +9,10 @@ class IndicadorIn(BaseModel):
     colorin: str
     formula: str
     calculo: str
+    ponderado: float
+    lgreen: float
+    lyellow: float
+    lred: float
 
 class IndicadorOut(BaseModel):
     id_indicador: int = 0
@@ -19,3 +23,7 @@ class IndicadorOut(BaseModel):
     colorin: str
     formula: str
     calculo: str
+    ponderado: float
+    lgreen: float
+    lyellow: float
+    lred: float
