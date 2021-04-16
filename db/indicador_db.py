@@ -44,7 +44,7 @@ database_indicadores = {
                             "lred":95.0}),
     "Indicador3": IndicadorInDB(**{"id_indicador": 3,
                             "name":"Calidad Embargos y Desembargos",
-                            "porcentaje": 99.9,
+                            "porcentaje": 100,
                             "gerencia": "Gerencia Operación Bancaria",
                             "central": "Atención a Requerimientos Externos",
                             "colorin":"green",
