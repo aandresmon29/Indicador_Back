@@ -73,7 +73,7 @@ database_indicadores = {
 							"lgreen":97,
 							"lyellow":97}),
 	"Indicador7": IndicadorInDB(**{"id_indicador": 7,
-							"name":"Oportunidad transacciones atendidas en los tiempos definidos ANS",
+							"name":"Oportunidad trx atendidas en los tiempos definidos ANS",
 							"porcentaje":99.3,
 							"gerencia":"Gerencia de Operación Bancaria",
 							"central": "Centro Operación Empresarial  - Fiduciario",
