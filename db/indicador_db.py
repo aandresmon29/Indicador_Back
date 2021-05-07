@@ -18,7 +18,7 @@ class IndicadorInDB(BaseModel):
 database_indicadores = Dict[str, IndicadorInDB]
 database_indicadores = {
 	"Indicador3": IndicadorInDB(**{"id_indicador": 3,
-							"name":"Atención casos escalados por OMAT por correo (En construcción y validación con otras áreas)",
+							"name":"Atención casos escalados por OMAT por correo",
 							"porcentaje":83.1,
 							"gerencia":"Gerencia de Operación Bancaria",
 							"central": "Soporte a Aplicaciones",
@@ -139,7 +139,7 @@ database_indicadores = {
 							"lgreen":100,
 							"lyellow":100}),
 	"Indicador8": IndicadorInDB(**{"id_indicador": 8,
-							"name":"Oportunidad en la inclusión de negociaciones vinculación o mantenimiento Clientes Empresariales",
+							"name":"Oportunidad en la inclusión de negociaciones vinculación",
 							"porcentaje":100,
 							"gerencia":"Gerencia de Operación Bancaria",
 							"central": "Supervisión Operativa Cash",
@@ -161,7 +161,7 @@ database_indicadores = {
 							"lgreen":100,
 							"lyellow":100}),
 	"Indicador10": IndicadorInDB(**{"id_indicador": 10,
-							"name":"Oportunidad en el cumplimiento de operaciones del Piso Financiero y otras Áreas de las empresas adsc",
+							"name":"Oportunidad en el cumplimiento de operaciones del PF y otras Áreas de las empresas adsc",
 							"porcentaje":100,
 							"gerencia":"Gerencia de Operación Bancaria",
 							"central": "UAC Back Office",
