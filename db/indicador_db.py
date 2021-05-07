@@ -161,7 +161,7 @@ database_indicadores = {
 							"lgreen":100,
 							"lyellow":100}),
 	"Indicador10": IndicadorInDB(**{"id_indicador": 10,
-							"name":"Oportunidad en el cumplimiento de operaciones del PF y otras Áreas de las empresas adsc",
+							"name":"Oportunidad en el cumplimiento de operaciones del PF y adsc",
 							"porcentaje":100,
 							"gerencia":"Gerencia de Operación Bancaria",
 							"central": "UAC Back Office",
