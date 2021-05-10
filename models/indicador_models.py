@@ -11,7 +11,7 @@ class IndicadorIn(BaseModel):
     calculo: str
     ponderado: float
     lgreen: float
-    lyellow: float
+    lyellow: str
 
 class IndicadorOut(BaseModel):
     id_indicador: int = 0
@@ -24,4 +24,4 @@ class IndicadorOut(BaseModel):
     calculo: str
     ponderado: float
     lgreen: float
-    lyellow: float
+    lyellow: str
