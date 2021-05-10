@@ -13,7 +13,7 @@ origins = [
     "http://localhost", "http://localhost:8080","https://indivp.herokuapp.com",
 ]
 
-FastAPIError.add_middleware(
+api.add_middleware(
     CORSMiddleware, allow_origins=origins,
     allow_credentials=True, allow_methods=["*"], allow_headers=["*"],
 )
