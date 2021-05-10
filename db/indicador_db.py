@@ -3,18 +3,18 @@ from pydantic import BaseModel
 from pydantic.errors import ArbitraryTypeError
 
 class IndicadorInDB(BaseModel):
-    id_indicador: int = 0
-    name: str
-    porcentaje: float
-    gerencia: str
-    central: str
-    colorin: str
-    formula: str
-    calculo: str
-    ponderado: float
-    lgreen: float
-    lyellow: str
-	lred: str
+	id_indicador: int = 0
+	name: str
+	porcentaje: float
+	gerencia: str
+	central: str
+	colorin: str
+	formula: str
+	calculo: str
+	ponderado: float
+	lgreen: float
+	lyellow: str
+	lred: float
 
 database_indicadores = Dict[str, IndicadorInDB]
 database_indicadores = {
